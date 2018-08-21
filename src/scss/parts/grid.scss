@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  .mine {
+    width: 172px;
+    background: #FCF9F7;
+  }
+  .content-wrap {
+    width: calc( 100% - 172px );
+  }
+}

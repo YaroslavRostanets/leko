@@ -1,0 +1,335 @@
+.one-screen {
+  position: relative;
+  .top-flex {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    z-index: 1;
+  }
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .phone-num {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .std-top-link {
+    font-size: 14px;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 50px;
+    }
+    .icon {
+      width: 36px;
+      height: 36px;
+      background: #FCF9F7;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 6px;
+    }
+  }
+  .banner-slider {
+    .item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-in-out !important;
+      transform: scale(1.15, 1.15);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-left: 105px;
+      padding-bottom: 60px;
+      &.slick-active {
+        transform: scale(1, 1);
+      }
+      .item-title {
+        font-size: 50px;
+        color: #FFFFFF;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+      }
+      .item-subtitle {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 22px;
+        margin: 0 0 35px 0;
+      }
+      .search-wrap {
+        border-bottom: 2px solid #FFFFFF;
+        width: 358px;
+        padding: 13px 0;
+        position: relative;
+        input[type="text"]{
+          background: transparent;
+          font-size: 24px;
+          color: #FFFFFF;
+          border: none;
+          padding-left: 35px;
+          width: 100%;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #FFFFFF;
+          }
+        }
+        button {
+          border: none;
+          background: transparent;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          svg {
+            fill: #FFFFFF;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      margin: 0;
+      position: absolute;
+      bottom: 84px;
+      right: 60px;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      font-size: 0;
+      li {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #FFFFFF;
+        margin-right: 11px;
+        transition: all 0.3s ease;
+        &.slick-active {
+          width: 24px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        button {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+.ingredient-group {
+  padding-left: 110px;
+  padding-top: 94px;
+  padding-bottom: 48px;
+  .phone-num {
+    color: #000000;
+  }
+  .std-top-link {
+    color: #000000;
+    .icon {
+      background: #FCF9F7;
+    }
+  }
+  .catalog-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #212121;
+    max-width: 510px;
+    line-height: 140%;
+    margin-bottom: 45px;
+    a {
+      color: #FA4616;
+      display: inline;
+      &:after {
+        content: "";
+        width: 16px;
+        height: 14px;
+        display: inline-block;
+        margin-left: 11px;
+        background-image: url('../img/icons/red-arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .catalog-tiles-wrap {
+    display: flex;
+    align-items: flex-end;
+    .catalog-tiles {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -12px;
+      margin-right: -12px;
+      margin-bottom: -24px;
+      width: 896px;
+    }
+    .one-tile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 0 12px 24px 12px;
+      overflow: hidden;
+      &:hover {
+        .lining {
+          opacity: 0;
+        }
+        .background {
+          transform: scale(1.1);
+        }
+        svg {
+          fill: #FFFFFF;
+        }
+        .stroke {
+          fill: none;
+          stroke: #FFFFFF;
+        }
+        .text {
+          color: #FFFFFF;
+        }
+      }
+    }
+    .background {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s ease-out;
+    }
+    svg {
+      position: relative;
+      width: 24px;
+      height: auto;
+      margin-bottom: 25px;
+      fill: #212121;
+      transition: all 0.2s ease;
+    }
+    .stroke {
+      fill: none;
+      stroke: #212121;
+    }
+    .text {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      color: #212121;
+      font-size: 14px;
+      line-height: 120%;
+      transition: all 0.2s ease;
+    }
+    .lining {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: all 0.3s ease-out;
+    }
+    .download-catalog {
+      color: #FA4616;
+      font-size: 16px;
+      margin-left: 70px;
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 21px;
+        width: 18px;
+        background-image: url('../img/icons/download.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: -6px;
+        margin-right: 2px;
+      }
+    }
+  }
+}
+.about-us {
+  padding: 50px 25px 118px 0;
+  .about-us-img {
+    width: 448px;
+    margin-right: 110px;
+    float: left;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .text {
+    margin-bottom: 25px;
+  }
+  .about-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    margin-top: 100px;
+    width: 1065px;
+    margin-bottom: 60px;
+  }
+  .read-more {
+    color: #FA4616;
+    font-size: 16px;
+    &:after {
+      content: "";
+      width: 16px;
+      height: 14px;
+      display: inline-block;
+      margin-left: 11px;
+      background-image: url(../img/icons/red-arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: -1px;
+    }
+  }
+  .ranks {
+    display: flex;
+    .one-rank {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      background: #FCF9F7;
+      margin: 0 24px 0 0;
+      font-size: 15px;
+      font-weight: 300;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .num {
+      font-size: 50px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[- node -]
+node.js
+	npm
+
+[- gulp -]
+--------------------------------
+npm install --global gulp
+--------------------------------
+npm install --save-dev gulp gulp-concat gulp-rename gulp-sourcemaps gulp-watch gulp-changed
+npm install --save-dev gulp-cached gulp-remember gulp-connect
+npm install --save-dev gulp-less
+npm install --save-dev gulp-compass gulp-sass
+npm install --save-dev gulp-uglify gulp-minify-css gulp-css-base64 gulp-autoprefixer
+npm install --save-dev gulp-imagemin gulp-image-resize
+npm install --save-dev imagemin-pngquant
+npm install --save-dev imagemin-jpegtran
+npm install --save-dev imagemin-svgo
+npm install --save-dev gulp-sprite-generator
+
+npm install --save-dev jshint gulp-jshint jshint-stylish gulp-scss-lint gulp-csslint

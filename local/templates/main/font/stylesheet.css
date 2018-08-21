@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+@font-face {
+  font-family: 'leko-icon';
+  src:  url('leko-icon.eot?n77fcf');
+  src:  url('leko-icon.eot?n77fcf#iefix') format('embedded-opentype'),
+    url('leko-icon.ttf?n77fcf') format('truetype'),
+    url('leko-icon.woff?n77fcf') format('woff'),
+    url('leko-icon.svg?n77fcf#leko-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="leko-"], [class*=" leko-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'leko-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.leko-align:before {
+  content: "\e900";
+}
+.leko-basket:before {
+  content: "\e901";
+}
+.leko-bottle:before {
+  content: "\e902";
+}
+.leko-circles:before {
+  content: "\e903";
+}
+.leko-drop:before {
+  content: "\e904";
+}
+.leko-flower:before {
+  content: "\e905";
+}
+.leko-honeycomb:before {
+  content: "\e906";
+}
+.leko-person:before {
+  content: "\e907";
+}
+.leko-phone:before {
+  content: "\e908";
+}
+.leko-phone2:before {
+  content: "\e909";
+}
+.leko-search:before {
+  content: "\e90a";
+}

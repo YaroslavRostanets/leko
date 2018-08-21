@@ -1,0 +1,268 @@
+@media (max-width: 960px) {
+  header {
+    .top-part {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .bot-part {
+      padding: 0 20px;
+    }
+    .nav>li>a {
+      text-align: center;
+    }
+  }
+  .baner {
+    .page-title-container {
+      h1 {
+        font-size: 25px;
+        margin: 0 0 5px;
+      }
+      .after-title {
+        font-size: 18px;
+      }
+    }
+  }
+  .tiles-wrap {
+    max-width: 750px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog-tile {
+    width: 50%;
+    height: auto;
+    .md-btn {
+      opacity: 1;
+    }
+    .text {
+      display: none;
+    }
+  }
+  .feedback-cont {
+    .img-part {
+      display: none;
+    }
+  }
+  footer {
+    .container {
+      .footer-in {
+        padding: 35px 15px 40px;
+      }
+    }
+  }
+  .articles-wrap {
+    flex-wrap: wrap;
+  }
+  .articles-cont {
+    .one-article {
+      width: 100%;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .product-main {
+    .prod-top {
+      .img-cont {
+        width: 50%;
+      }
+      .info-cont {
+        width: 50%;
+      }
+    }
+    .product-name {
+      font-size: 22px;
+    }
+    .roasting-select {
+      a {
+        margin-right: 8px;
+      }
+    }
+    .price {
+      font-size: 22px;
+    }
+    .price-wrap {
+      .md-btn {
+        width: 140px;
+        min-width: 140px;
+      }
+    }
+    .char-delivery {
+      flex-wrap: wrap;
+    }
+    .char-table {
+      width: 100%;
+    }
+    .delivery-table {
+      width: 100%;
+    }
+    .descr-roast {
+      flex-direction: column-reverse;
+      .description {
+        width: 100%;
+        h4 {
+          display: none;
+        }
+      }
+      .mobile-title {
+        display: block;
+        text-align: center;
+        font-size: 28px;
+        margin: 0 0 15px;
+      }
+      .scheme {
+        margin: 0 auto 20px auto;
+      }
+    }
+    .reviews-wrap {
+      margin-bottom: 20px;
+      .reviews-flex {
+        flex-wrap: wrap;
+      }
+      .reviews-view {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 25px;
+      }
+      .add-review {
+        width: 100%;
+      }
+    }
+    .add-review-in {
+      h5 {
+        font-size: 24px;
+        margin: 0 0 15px;
+      }
+    }
+  }
+  .basket-main {
+    .container-in {
+      width: 735px;
+    }
+    .one-product {
+      .prod-name {
+        font-size: 19px;
+        margin-bottom: 15px;
+      }
+      .bot {
+        flex-direction: column;
+      }
+      .price {
+        margin-bottom: 20px;
+      }
+      .rape {
+        margin-bottom: 10px;
+      }
+      .count-price {
+        justify-content: space-between;
+      }
+    }
+  }
+  .shares-main {
+    h1 {
+      margin: 0 0 15px;
+      font-size: 28px;
+    }
+    .container-in {
+      width: 735px;
+    }
+    .share-name {
+      font-size: 24px;
+    }
+    .pagination {
+      font-size: 26px;
+    }
+    .catalog-tile {
+      height: auto;
+    }
+  }
+  .checkout-main {
+    h1 {
+      margin: 0 0 25px;
+      font-size: 28px;
+    }
+    .container-in {
+      width: 720px;
+    }
+    .checkout-form-wrap {
+      width: 510px;
+      margin: 0 auto;
+      .jq-selectbox__select {
+        width: 355px;
+      }
+      .delivery {
+        width: auto;
+        margin-left: 150px;
+      }
+      .delivery-type {
+        label {
+          width: 150px;
+        }
+        input[type=text] {
+          width: 355px;
+        }
+      }
+      .payment-method {
+        .jq-selectbox__select {
+          width: 355px;
+        }
+      }
+    }
+    .checkout-wrap {
+      flex-direction: column;
+      label {
+        width: 150px;
+      }
+      input[type=text], input[type=email] {
+        width: 355px;
+      }
+    }
+    .comment-wrap {
+      width: 505px;
+    }
+    .checkout-cont {
+      width: 510px;
+      margin: 0 auto 20px auto;
+    }
+  }
+  .home-main {
+    .catalog-tile {
+      height: auto;
+      &:hover {
+        .catalog-tile-in {
+          background: transparent;
+          box-shadow: none;
+        }
+        .img {
+          transform: scale(1.0);
+        }
+      }
+
+    }
+  }
+  .catalog-main {
+    .catalog-tile {
+      &:hover {
+        .catalog-tile-in {
+          box-shadow: none;
+          background: transparent;
+        }
+        .img-cont {
+          .img {
+            transform: scale(1.0);
+          }
+        }
+      }
+    }
+    .sort {
+      .jq-selectbox__select {
+        background: #FFFFFF;
+      }
+    }
+  }
+}

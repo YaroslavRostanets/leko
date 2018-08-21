@@ -1,0 +1,43 @@
+gulp
+
+[ base ]
+gulp-concat		-	Concatenates files
+gulp-rename		-	Rename files
+gulp-sourcemaps		-	Source map support for Gulp.js
+gulp-watch		-	Watch, that actually is an endless stream
+gulp-if			-	Conditionally run a task
+gulp-cached		-	A simple in-memory file cache for gulp
+gulp-remember		-	pairs nicely with gulp-cached
+gulp-connect		-	
+
+[ TEST CODE ]
+gulp-jshint		-	JSHint plugin for gulp
+jshint-stylish		-	
+gulp-csslint		-	CSSLint plugin for gulp
+gulp-scss-lint		-	Validate `.scss` files with `scss-lint`
+
+[ DEV ]
+gulp-mocha		-	Run Mocha tests
+gulp-jsdoc		-	A jsdoc plugin for Gulp
+gulp-es6-transpiler	-	Transpile ES6 to ES5
+
+[ Makets dev ]
+gulp-less		-	Less for Gulp
+gulp-sass		-	Gulp plugin for sass
+gulp-compass		-	Compass for Gulp
+gulp-autoprefixer	-	Prefix CSS
+gulp-image-resize	-	Resizing images made easy
+
+[ Minify ]
+gulp-htmlmin		-	gulp plugin to minify HTML
+gulp-uglify		-	Minify JS
+gulp-minify-css		-	Minify css with clean-css
+gulp-css-base64		-	Gulp's task for transform all resources found in a CSS into base64-encoded data URI strings
+
+[ image ]
+gulp-imagemin		-	Minify PNG, JPEG, GIF and SVG images
+imagemin-pngquant
+imagemin-jpegtran
+imagemin-svgo
+
+
