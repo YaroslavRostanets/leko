@@ -77,4 +77,30 @@ $(document).ready(function(){
         dots: true
     });
 
+    var indSlider = $('.js-industries-slider').slick({
+        arrows: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false
+    });
+
+    indSlider.find('.slick-active').last().addClass('opacity');
+
+    indSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log(currentSlide, nextSlide);
+        $(this).find('.opacity').removeClass('opacity');
+        if(nextSlide > currentSlide){
+            $(this).find('.slick-active').last().next().addClass('opacity');
+        } else {
+            $(this).find('.slick-active').last().prev().addClass('opacity');
+        }
+    });
+
+    $('.js-news-list').slick({
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false
+    });
+
 });
