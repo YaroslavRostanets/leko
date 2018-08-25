@@ -1,0 +1,154 @@
+@media (max-width: 1440px) {
+  h2 {
+    font-size: 40px;
+  }
+  .one-screen {
+    .banner-slider {
+      .item {
+        padding-left: 90px;
+        .item-title {
+          font-size: 40px;
+        }
+        .item-subtitle {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .ingredient-group {
+    .catalog-tiles-wrap {
+      .one-tile {
+        margin: 0 7px 14px;
+        width: 156px;
+        height: 156px;
+      }
+      .catalog-tiles {
+        width: 680px;
+      }
+      .download-catalog {
+        margin-left: 45px;
+      }
+    }
+  }
+  .about-us {
+    padding: 50px 25px 100px 0;
+    .about-us-img {
+      width: 370px;
+      margin-right: 90px;
+    }
+    .about-text {
+      margin-top: 50px;
+      width: 940px;
+    }
+    .ranks {
+      .one-rank {
+        width: 148px;
+        height: 148px;
+        margin: 0 15px 0 0;
+      }
+      .num {
+        font-size: 40px;
+      }
+    }
+  }
+  .industries {
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-bottom: 120px;
+    .industries-slider {
+      .ind-item-img {
+        min-width: 0;
+        //height: 180px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .sign-up {
+    background: #6CC24A;
+    padding-top: 70px;
+    padding-left: 90px;
+    padding-bottom: 100px;
+    input[type=text] {
+      width: 270px;
+      &::placeholder {
+        font-size: 20px;
+        height: 30px;
+        line-height: 31px;
+      }
+    }
+    .btn {
+      height: 50px;
+      font-size: 21px;
+    }
+    .subtitle {
+      margin-bottom: 35px;
+    }
+  }
+  .news-and-media {
+    padding-left: 90px;
+    padding-top: 85px;
+    .categories {
+      a {
+        margin-right: 20px;
+      }
+    }
+    .title {
+      margin-bottom: 8px;
+    }
+    .one-news {
+      .data-report {
+        height: 50px;
+      }
+      .img-cont {
+        height: 180px;
+      }
+      .text {
+        font-size: 16px;
+      }
+    }
+    .news-list {
+      margin-bottom: 75px;
+    }
+    .soc {
+      margin-right: 130px;
+    }
+  }
+  .suppliers {
+    padding-left: 90px;
+    padding-top: 115px;
+    padding-bottom: 80px;
+    .one-supp {
+      width: 180px;
+      height: 180px;
+    }
+    .supp-list {
+      max-width: 540px;
+      min-width: 540px;
+    }
+    .supp-text {
+      margin-top: -70px;
+    }
+  }
+  .questions-remained {
+    padding-top: 80px;
+    padding-left: 90px;
+    .title {
+      margin: 0 0 30px;
+    }
+    input[type=text] {
+      width: 270px;
+      &::placeholder {
+        font-size: 20px;
+        height: 30px;
+        line-height: 31px;
+      }
+    }
+    .btn {
+      height: 50px;
+      font-size: 21px;
+    }
+  }
+  .footer {
+    padding: 30px 45px 30px 90px;
+  }
+}

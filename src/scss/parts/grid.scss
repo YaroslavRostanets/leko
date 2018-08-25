@@ -1,8 +1,29 @@
 .main {
   display: flex;
-  .mine {
+  overflow: hidden;
+  &.open-drop {
+    .close-dropdown {
+      display: block;
+    }
+    .struct {
+      background: #F4EFEB;
+      width: 372px;
+      min-width: 372px;
+    }
+    .menu {
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    }
+    .content-wrap {
+      position: relative;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    }
+  }
+  .struct {
     width: 172px;
+    min-width: 172px;
+    transition: all 0.2s ease;
     background: #FCF9F7;
+    position: relative;
   }
   .content-wrap {
     width: calc( 100% - 172px );
