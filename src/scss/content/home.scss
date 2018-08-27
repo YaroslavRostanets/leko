@@ -87,6 +87,7 @@
           border: none;
           padding-left: 35px;
           width: 100%;
+          z-index: 1;
           &:focus {
             outline: none;
           }
@@ -264,6 +265,12 @@
       color: #FA4616;
       font-size: 16px;
       margin-left: 70px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease;
+      &:hover {
+        border-bottom: 1px solid #FA4616;
+      }
       &:before {
         content: "";
         display: inline-block;
@@ -306,6 +313,11 @@
   .read-more {
     color: #FA4616;
     font-size: 16px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+    &:hover {
+      border-bottom: 1px solid #FA4616;
+    }
     &:after {
       content: "";
       width: 16px;
@@ -460,6 +472,23 @@
     border-bottom: 2px solid #FFFFFF;
     margin-right: 25px;
     padding-bottom: 8px;
+    position: relative;
+    &.focused {
+      .placeholder {
+        font-size: 13px;
+        top: -15px;
+      }
+    }
+    .placeholder {
+      font-size: 24px;
+      font-weight: 300;
+      color: #FFFFFF;
+      font-family: 'Roboto', sans-serif;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      transition: all 0.2s ease;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -475,6 +504,8 @@
     font-weight: 300;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 1;
     &:focus {
       outline: none;
     }
@@ -496,6 +527,12 @@
     padding-left: 24px;
     padding-right: 24px;
     margin-left: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      background: #6CC24A;
+      color: #FFFFFF;
+    }
   }
 }
 .news-and-media {
@@ -510,6 +547,11 @@
       font-weight: 300;
       font-size: 16px;
       margin-right: 27px;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease;
+      &:hover {
+        border-bottom: 1px solid #FA4616;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -520,18 +562,16 @@
   }
   .one-news {
     margin: 0 12px;
+    &.opacity {
+      opacity: 0.5;
+    }
     .img-cont {
       width: 100%;
-      height: 230px;
       position: relative;
       overflow: hidden;
       img {
         display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         width: 100%;
-        transform: translate(-50%,-50%);
       }
     }
     .data-report {
@@ -619,6 +659,11 @@
       color: #757575;
       font-size: 18px;
       text-decoration: none;
+      transition: all 0.2s ease;
+      &:hover {
+        background: #757575;
+        color: #FCF9F7;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -633,6 +678,22 @@
       padding: 13px 0;
       border-bottom: 2px solid #D6D2D0;
       position: relative;
+      &.focused {
+        .placeholder {
+          font-size: 13px;
+          top: -10px;
+        }
+      }
+    }
+    .placeholder {
+      color: #9E9E9E;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      transition: all 0.2s ease;
     }
     input[type="text"]{
       display: block;
@@ -642,6 +703,9 @@
       font-size: 18px;
       font-weight: 300;
       font-family: 'Roboto', sans-serif;
+      z-index: 1;
+      position: relative;
+      background: transparent;
       &::placeholder {
         color: #9E9E9E;
         font-size: 18px;
@@ -755,9 +819,26 @@
     margin-right: 25px;
     padding-bottom: 8px;
     padding-top: 8px;
+    position: relative;
+    &.focused {
+      .placeholder {
+        font-size: 13px;
+        top: -15px;
+      }
+    }
     &:last-child {
       margin-right: 0;
     }
+  }
+  .placeholder {
+    font-size: 24px;
+    font-weight: 300;
+    color: #9E9E9E;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    transition: all 0.2s ease;
   }
   input[type="text"]{
     width: 310px;
@@ -770,6 +851,8 @@
     font-weight: 300;
     color: #9E9E9E;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 1;
     &:focus {
       outline: none;
     }
@@ -790,6 +873,13 @@
     margin-left: 25px;
     font-size: 24px;
     font-weight: 300;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      color: #FA4616;
+      background: #FFFFFF;
+      border: 1px solid #FA4616;
+    }
   }
   .title {
     margin: 0 0 40px 0;

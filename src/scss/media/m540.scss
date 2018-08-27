@@ -1,0 +1,244 @@
+@media (max-width: 540px) {
+  .one-screen {
+    .phone-num {
+      display: none;
+    }
+    .banner-slider {
+      .item {
+        padding-right: 30px;
+        .item-subtitle {
+          margin: 0 0 18px;
+        }
+        .search-wrap {
+          width: 100%;
+          padding: 15px 0;
+          input[type=text] {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .std-top-link {
+      margin-right: 20px;
+    }
+  }
+  .ingredient-group {
+    padding-top: 46px;
+    h2 {
+      margin-bottom: 23px;
+    }
+    .catalog-tiles-wrap {
+      .one-tile {
+        width: 162px;
+        height: 162px;
+      }
+    }
+  }
+  .about-us {
+    padding-left: 15px;
+    padding-right: 15px;
+    h4 {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+    .about-us-img {
+      display: none;
+    }
+  }
+  .industries {
+    .industries-slider {
+      margin-right: -85px;
+      .ind-item-img {
+        margin-bottom: 30px;
+      }
+      .slick-arrow {
+        top: 31px;
+      }
+      .slick-prev {
+        right: 151px;
+      }
+      .slick-next {
+        right: 88px;
+      }
+    }
+  }
+  .sign-up {
+    input[type=text] {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+    }
+    .form-group {
+      width: 100%;
+      margin-bottom: 29px;
+    }
+  }
+  .news-and-media {
+    .news-list {
+      margin-right: -175px;
+    }
+    .slick-arrow {
+      top: 30px;
+    }
+    .slick-prev {
+      right: 240px;
+    }
+    .slick-next {
+      right: 175px;
+    }
+    .soc-list {
+      .one-soc {
+        width: 78px;
+        height: 78px;
+      }
+    }
+    .soc {
+      margin-bottom: 50px;
+    }
+    .subscr {
+      .text {
+        margin-bottom: 15px;
+      }
+      .form-group {
+        max-width: none;
+      }
+    }
+  }
+  .suppliers {
+    padding: 40px 15px 35px;
+    .supp-list {
+      max-width: 340px;
+      min-width: 340px;
+    }
+    .one-supp {
+      width: 113px;
+      height: 113px;
+      img {
+        max-width: 87px;
+        max-height: 67px;
+      }
+    }
+    .last-sup {
+      width: 230px;
+    }
+  }
+  .questions-remained {
+    padding-top: 38px;
+    .subtitle {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    b {
+      white-space: nowrap;
+    }
+    .form-group {
+      width: 100%;
+    }
+    input[type=text] {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+    }
+    .flex {
+      margin-bottom: 80px;
+    }
+    .contacts {
+      .one-item {
+        width: 100%;
+        margin-bottom: 23px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .cont {
+          display: flex;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 22px 15px 15px;
+    .copyright {
+      margin-bottom: 25px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .one-screen {
+    .banner-slider {
+      .item {
+        height: 520px;
+      }
+    }
+  }
+  .ingredient-group {
+    .catalog-tiles-wrap {
+      .catalog-tiles {
+        margin-left: -6px;
+        width: calc( 100% + 12px);
+      }
+      .one-tile {
+        width: 139px;
+        height: 139px;
+        margin: 0 6px 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      svg {
+        margin-bottom: 10px;
+      }
+      .download-catalog {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .about-us {
+    padding: 40px 0 60px;
+    .ranks {
+      .num {
+        font-size: 15px;
+      }
+      .one-rank {
+        font-size: 10px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .about-text {
+      margin-bottom: 35px;
+    }
+  }
+  .news-and-media {
+    .categories {
+      a {
+        white-space: nowrap;
+      }
+    }
+    .soc-list {
+      .one-soc {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .suppliers {
+    .supp-list {
+      width: 100%;
+      min-width: 0;
+      max-width: none;
+    }
+    .one-supp {
+      width: 50%;
+      &:nth-child(3n+3){
+        border-right: none;
+      }
+      &:nth-child(2n+2) {
+        border-right: 1px solid #F8F3EF;
+      }
+    }
+  }
+}

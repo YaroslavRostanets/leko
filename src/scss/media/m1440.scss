@@ -1,3 +1,47 @@
+@media (min-width: 1640px) {
+  .ingredient-group {
+    .catalog-tiles-wrap {
+      .catalog-tiles {
+        width: 65vw;
+      }
+      .one-tile {
+        width: 15vw;
+        height: 15vw;
+      }
+
+    }
+  }
+  .sign-up {
+    input[type=text] {
+      width: 20vw;
+    }
+    .btn {
+      width: 20vw;
+    }
+  }
+  .suppliers {
+    .supp-list {
+      max-width: 40vw;
+      min-width: 40vw;
+    }
+    .one-supp {
+      width: 13vw;
+      height: 13vw;
+    }
+    .last-sup {
+      left: 39vw;
+    }
+  }
+  .questions-remained {
+    input[type=text] {
+      width: 20vw;
+    }
+    .btn {
+      width: 20vw;
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   h2 {
     font-size: 40px;
@@ -68,6 +112,11 @@
     padding-top: 70px;
     padding-left: 90px;
     padding-bottom: 100px;
+    .placeholder {
+      font-size: 20px;
+      height: 30px;
+      line-height: 31px;
+    }
     input[type=text] {
       width: 270px;
       &::placeholder {
@@ -137,6 +186,11 @@
     }
     input[type=text] {
       width: 270px;
+      .placeholder {
+        font-size: 20px;
+        height: 30px;
+        line-height: 31px;
+      }
       &::placeholder {
         font-size: 20px;
         height: 30px;

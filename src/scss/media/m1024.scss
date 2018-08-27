@@ -188,9 +188,124 @@
       font-size: 15px;
       font-weight: 300;
       line-height: 160%;
+      margin-bottom: 25px;
     }
     input[type=text] {
       width: 200px;
+    }
+    .btn {
+      height: 60px;
+      font-size: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .news-and-media {
+    padding-top: 94px;
+    padding-left: 55px;
+    .title {
+      margin-bottom: 20px;
+    }
+    .categories {
+      a {
+        font-size: 15px;
+        margin-right: 18px;
+      }
+    }
+    .one-news {
+      .img-cont {
+        height: auto;
+        img {
+          height: auto;
+          position: static;
+          transform: translate(0, 0);
+        }
+      }
+    }
+    .slick-next {
+      right: 180px;
+    }
+    .news-list {
+      margin-bottom: 50px;
+    }
+    .news-bottom {
+      padding-right: 45px;
+    }
+    .text {
+      line-height: 140%;
+    }
+    .soc {
+      .text {
+        margin-bottom: 23px;
+      }
+    }
+    .subscr {
+      input[type=text] {
+        padding-left: 3px;
+      }
+    }
+  }
+  .suppliers {
+    padding-top: 40px;
+    padding-left: 55px;
+    padding-bottom: 60px;
+    .supp-text {
+      width: 360px;
+      margin-bottom: 45px;
+      .text {
+        font-size: 15px;
+        line-height: 160%;
+      }
+    }
+    .one-supp {
+      width: 162px;
+      height: 162px;
+    }
+    .supp-list {
+      max-width: 486px;
+      min-width: 486px;
+    }
+  }
+  .questions-remained {
+    padding-left: 55px;
+    .title {
+      margin: 0 0 20px;
+    }
+    .subtitle {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 160%;
+      width: 450px;
+      margin-bottom: 43px;
+    }
+    .btn {
+      height: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .flex {
+      margin-bottom: 120px;
+    }
+    .contacts {
+      .cont {
+        font-size: 15px;
+      }
+      .one-item {
+        margin-right: 56px;
+      }
+      .label {
+        margin-bottom: 12px;
+      }
+      .cont {
+        line-height: 160%;
+      }
+    }
+  }
+  .footer {
+    padding: 10px 48px 30px 56px;
+    line-height: 120%;
+    .flex {
+      align-items: flex-end;
     }
   }
 }

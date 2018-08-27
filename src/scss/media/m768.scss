@@ -1,7 +1,231 @@
-@media (max-width: 768px) {
-  .main {
-    .struct {
-      display: none;
+@media (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
+  .one-screen {
+    .banner-slider {
+      .item {
+        padding-left: 30px;
+        padding-bottom: 80px;
+        .item-title {
+          font-size: 30px;
+        }
+        .search-wrap {
+          margin: 0 auto;
+        }
+      }
+      .slick-dots {
+        bottom: 30px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+  }
+  .ingredient-group {
+    padding-top: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .catalog-description {
+      margin-bottom: 30px;
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+      a {
+        margin-left: 0;
+      }
+    }
+    .catalog-tiles-wrap {
+      .catalog-tiles {
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+      }
+      .download-catalog {
+        margin: 0 auto;
+      }
+    }
+  }
+  .about-us {
+    padding: 40px 0 80px 0;
+    h4 {
+      font-size: 21px;
+      margin: 10px 0;
+    }
+    .about-us-img {
+      width: 200px;
+      margin-right: 25px;
+    }
+    .about-text {
+      margin-top: 10px;
+      width: 100%;
+      padding-right: 15px;
+    }
+    .text {
+      margin-bottom: 10px;
+    }
+    .ranks {
+      .one-rank {
+        margin: 0 8px 0 8px;
+        width: 135px;
+        height: 135px;
+        &:last-child {
+          margin-right: 8px;
+        }
+      }
+      .num {
+        font-size: 30px;
+      }
+    }
+  }
+  .industries {
+    padding-top: 47px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+    .industries-slider {
+      margin-left: 0;
+      padding-top: 75px;
+      .slick-arrow {
+        top: 35px;
+      }
+      .slick-next {
+        right: 70px;
+      }
+      .slick-prev {
+        right: 120px;
+      }
+    }
+  }
+  .sign-up {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-group {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    input[type=text] {
+      width: 315px;
+    }
+    .btn {
+      width: 315px;
+    }
+  }
+  .news-and-media {
+    padding-top: 57px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    .news-list {
+      padding-top: 75px;
+    }
+    .slick-arrow {
+      top: 40px;
+    }
+    .slick-prev {
+      right: 185px;
+    }
+    .slick-next {
+      right: 135px;
+    }
+    .soc {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+      .text {
+        margin-bottom: 0;
+      }
+    }
+    .news-bottom {
+      flex-direction: column;
+      padding-right: 0;
+    }
+    .subscr {
+      .text {
+        margin-bottom: 25px;
+      }
+      .form-group {
+        max-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .suppliers {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    .supp-text {
+      width: 100%;
+    }
+    .last-sup {
+      position: static;
+      width: 230px;
+      height: 115px;
+    }
+    .one-supp {
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3){
+        border-bottom: 1px solid #F8F3EF;
+      }
+    }
+    .supp-list {
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: none;
+    }
+  }
+  .questions-remained {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .flex {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+    .form-group {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    .btn, input[type=text] {
+      width: 315px;
+    }
+    .contacts {
+      flex-direction: column;
+      .one-item {
+        margin-bottom: 15px;
+        width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-right: auto;
+        }
+      }
+      .label {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .footer {
+    padding: 10px 15px 15px 15px;
+    .flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .copyright {
+      margin-bottom: 10px;
     }
   }
 }

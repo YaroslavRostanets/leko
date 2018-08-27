@@ -88,6 +88,12 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 3
                 }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
             }
         ]
     });
@@ -99,12 +105,14 @@ $(document).ready(function(){
         $(this).find('.opacity').removeClass('opacity');
         if(nextSlide > currentSlide){
             $(this).find('.slick-active').last().next().addClass('opacity');
-        } else {
-            $(this).find('.slick-active').last().prev().addClass('opacity');
         }
     });
 
-    $('.js-news-list').slick({
+    indSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(this).find('.slick-active').last().addClass('opacity');
+    });
+
+    var newsListSlider = $('.js-news-list').slick({
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -115,9 +123,31 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 3
                 }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
             }
         ]
     });
+
+    newsListSlider.find('.slick-active').last().addClass('opacity');
+
+    newsListSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log(currentSlide, nextSlide);
+        $(this).find('.opacity').removeClass('opacity');
+        if(nextSlide > currentSlide){
+            $(this).find('.slick-active').last().next().addClass('opacity');
+        }
+    });
+
+    newsListSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(this).find('.slick-active').last().addClass('opacity');
+    });
+
+
 
     $(window).scroll(function(){
         console.log();
@@ -146,6 +176,29 @@ $(document).ready(function(){
         $('.js-toggle-drop').removeClass('open');
     });
 
+    (function( $ ) {
+        $.fn.nicePlaceholder = function() {
+            var inputCol = $(this);
+            inputCol.each(function(i, item){
+                var placeholder = $(this).attr('placeholder');
+                $(this).attr('placeholder', '');
+                $(item).closest('.form-group').prepend('<div class="placeholder">' + placeholder + '</div>');
+                $(item).closest('.form-group').find('input').focusin(function(){
+                   $(this).closest('.form-group').addClass('focused');
+                });
+                $(item).closest('.form-group').find('input').focusout(function(){
+                    if(!$(this).val()){
+                        $(this).closest('.form-group').removeClass('focused');
+                    }
 
+                });
+                console.log(item);
+            });
+            console.log();
+
+        };
+    })(jQuery);
+
+    $('[data-nice-placeholder]').nicePlaceholder();
 
 });
