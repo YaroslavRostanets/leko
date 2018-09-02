@@ -27,6 +27,11 @@
     display: flex;
     align-items: center;
   }
+  .callback {
+    svg {
+      stroke: #FA4616;
+    }
+  }
   .std-top-link {
     font-size: 14px;
     color: #FFFFFF;
@@ -157,6 +162,12 @@
       background: #FCF9F7;
     }
   }
+  .callback {
+    color: #FA4616;
+    svg {
+      stroke: #FA4616;
+    }
+  }
   .catalog-description {
     font-size: 16px;
     font-weight: 300;
@@ -167,6 +178,7 @@
     a {
       color: #FA4616;
       display: inline;
+      transition: all 0.2s ease;
       &:after {
         content: "";
         width: 16px;
@@ -177,6 +189,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+      }
+      &:hover {
+        border-bottom: 1px solid #FA4616;
       }
     }
   }
@@ -562,6 +577,7 @@
   }
   .one-news {
     margin: 0 12px;
+    text-decoration: none;
     &.opacity {
       opacity: 0.5;
     }
@@ -728,6 +744,8 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 1;
+      cursor: pointer;
       &:focus {
         outline: none;
       }
