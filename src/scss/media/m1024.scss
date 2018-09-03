@@ -5,9 +5,100 @@
   .main {
     .struct {
       display: none;
+      width: 320px;
+      position: fixed;
+      z-index: 1;
+      top: 60px;
+      transition: none;
     }
     .content-wrap {
       width: 100%;
+    }
+    .close-dropdown {
+      top: 90px;
+      left: 330px;
+    }
+  }
+  .menu-open {
+    .top-flex {
+      background: #FFFFFF;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
+    }
+  }
+  .menu {
+    height: 60px;
+    position: static;
+    justify-content: flex-start;
+    &.fix {
+      background: #FCF9F7;
+      .lang-select {
+        .active {
+          a {
+            color: #FA4616;
+          }
+        }
+        a {
+          color: #212121;
+        }
+      }
+      .site-menu {
+        a {
+          color: #212121;
+          .stroke {
+            stroke: #212121;
+          }
+          svg {
+            fill: #212121;
+          }
+        }
+      }
+      .site-nav {
+        a {
+          color: #212121;
+        }
+      }
+      .bot-social {
+        a {
+          color: #212121;
+          font-size: 18px;
+        }
+      }
+    }
+    .lang-select {
+      padding: 25px 35px 15px 30px;
+      margin: 0 0 20px;
+      a {
+        color: #212121;
+      }
+    }
+    .logo {
+      display: none;
+    }
+    .search-item {
+      display: none;
+    }
+    .menu-in {
+      margin-bottom: 15px;
+    }
+    .site-menu {
+      margin: 0 0 28px;
+      li {
+        height: 45px;
+      }
+      a {
+        padding-left: 32px;
+      }
+    }
+    .site-nav {
+      a {
+        padding-left: 31px;
+      }
+    }
+    .bot-social {
+      padding: 15px 22px;
+      a {
+        font-size: 18px;
+      }
     }
   }
   .one-screen {
@@ -66,7 +157,18 @@
   .main-one-screen {
     .top-flex {
       top: 0;
+      position: fixed;
+      left: 0;
+      width: 100%;
       justify-content: space-between;
+      transition: all 0.15s ease-out;
+      &.white {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        .phone-num {
+          color: #212121;
+        }
+      }
     }
   }
   .logo {

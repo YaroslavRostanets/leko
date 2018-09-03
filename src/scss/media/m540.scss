@@ -193,6 +193,14 @@
       }
     }
   }
+  .main {
+    &.open-drop {
+      .struct {
+        width: 375px;
+        min-width: 375px;
+      }
+    }
+  }
 }
 
 @media (max-width: 380px) {
