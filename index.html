@@ -7,6 +7,7 @@
     <title>Leko</title>
     <link rel="stylesheet" href="local/templates/main/font/stylesheet.css">
     <link rel="stylesheet" href="local/templates/main/libs/slick/slick.css">
+    <link rel="stylesheet" href="local/templates/main/libs/modal/jquery.modal.min.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -151,7 +152,7 @@
                     </div>
                     <div class="right-part">
                         <a href="tel:+380443311551" class="phone-num">+38 044 331 15 51</a>
-                        <a href="javascript:void(0);" class="callback std-top-link">
+                        <a href="javascript:void(0);" class="callback std-top-link js-callback">
                             <div class="icon">
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.51299 12.3245C2.49595 9.3075 1.69972 5.52556 1.69972 3.11193L5.01846 2.20682L6.22528 5.82726L3.13755 9.04312C3.23812 9.34483 4.54754 11.3591 5.51299 12.3245ZM5.51299 12.3245C8.53003 15.3416 11.9577 15.7835 14.3713 15.7835L15.2764 12.4648L12.2594 11.8613L8.82939 14.665C8.32655 14.5644 6.47844 13.29 5.51299 12.3245Z" stroke-width="2"/>
@@ -263,7 +264,7 @@
             <div class="one-screen ingredient-group">
                 <div class="top-flex">
                     <a href="tel:+380443311551" class="phone-num">+38 044 331 15 51</a>
-                    <a href="javascript:void(0);" class="callback std-top-link">
+                    <a href="javascript:void(0);" class="callback std-top-link js-callback">
                         <div class="icon">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.51299 12.3245C2.49595 9.3075 1.69972 5.52556 1.69972 3.11193L5.01846 2.20682L6.22528 5.82726L3.13755 9.04312C3.23812 9.34483 4.54754 11.3591 5.51299 12.3245ZM5.51299 12.3245C8.53003 15.3416 11.9577 15.7835 14.3713 15.7835L15.2764 12.4648L12.2594 11.8613L8.82939 14.665C8.32655 14.5644 6.47844 13.29 5.51299 12.3245Z" stroke-width="2"></path>
@@ -808,8 +809,38 @@
     </div>
 </main>
 
+<!-- модалка Заказать звонок -->
+<div class="modal" id="request-call" style="display: inline-block;">
+    <h4>Заказать звонок</h4>
+    <div class="subtitle">
+        Укажите свои данные и тему вашего вопроса.
+        Менеджер свяжется с вами в ближайшее время
+    </div>
+    <form action="#">
+        <div class="form-group">
+            <input type="text" data-nice-placeholder placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+            <input type="text" data-nice-placeholder placeholder="Телефон">
+        </div>
+        <div class="form-group">
+            <input type="text" data-nice-placeholder placeholder="Тема звонка">
+        </div>
+        <button class="btn">
+            Отправить запрос
+        </button>
+    </form>
+    <a href="#close-modal" rel="modal:close" class="close-modal ">
+        <svg width="14" height="14" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.49805 0.997314L12.498 11.9968M1.49805 11.9968L12.498 0.997314" stroke-width="2"/>
+        </svg>
+    </a>
+</div>
+<!-- конец Заказать звонок -->
+
 <script src="https://use.fontawesome.com/1aba7bdd13.js"></script>
 <script src="local/templates/main/libs/slick/slick.min.js"></script>
+<script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 </body>
 </html>

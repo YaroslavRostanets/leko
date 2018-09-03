@@ -233,4 +233,11 @@ $(document).ready(function(){
         }
     });
 
+    $('.js-callback').on('click', function(){
+        $('#request-call').modal({
+            fadeDuration: 100,
+            fadeDelay: 0.1
+        });
+    });
+
 });
