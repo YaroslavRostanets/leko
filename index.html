@@ -804,8 +804,8 @@
                     </a>
                 </div>
             </div>
-            <a href="javascript:void(0);" class="js-sign-in">Войти</a>
-            <a href="javascript:void(0);" class="js-sign-up">Регистрация</a>
+            <!--<a href="javascript:void(0);" class="js-sign-in">Войти</a>
+            <a href="javascript:void(0);" class="js-sign-up">Регистрация</a>-->
         </div>
     </div>
 </main>
@@ -871,80 +871,84 @@
 
 <!-- модалка Войти -->
 <div class="modal" id="sign-in" style="display: none;">
-    <div class="top-part">
-        <a href="#close-modal" rel="modal:close" class="close-modal ">
-            <svg width="14" height="14" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.49805 0.997314L12.498 11.9968M1.49805 11.9968L12.498 0.997314" stroke-width="2"/>
-            </svg>
-        </a>
-        <form action="#">
-            <h4>Вход в личный кабинет</h4>
-            <div class="form-group">
-                <input type="email" data-nice-placeholder placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input type="password" data-nice-placeholder placeholder="Пароль">
-                <a href="javascript:void(0);" class="show-pass">
-                    Показать
-                </a>
-            </div>
-            <button class="btn">
-                Войти
-            </button>
-            <a href="#" class="forgot-password">
-                Забыли пароль
+    <div class="flex">
+        <div class="top-part">
+            <a href="#close-modal" rel="modal:close" class="close-modal ">
+                <svg width="14" height="14" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.49805 0.997314L12.498 11.9968M1.49805 11.9968L12.498 0.997314" stroke-width="2"/>
+                </svg>
             </a>
-        </form>
-    </div>
-    <div class="bot-part">
-        <h5>Еще не с нами?</h5>
-        <div class="subtitle">
-            Тогда зарегистрируйтесь, чтобы
-            получить подробную информацию
-            о каждом ингредиенте, скачать спецификацию,
-            узнать о рецептурах и т.д.
+            <form action="#">
+                <h4>Вход в личный кабинет</h4>
+                <div class="form-group">
+                    <input type="email" data-nice-placeholder placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" data-nice-placeholder placeholder="Пароль">
+                    <a href="javascript:void(0);" class="show-pass">
+                        Показать
+                    </a>
+                </div>
+                <button class="btn">
+                    Войти
+                </button>
+                <a href="#" class="forgot-password">
+                    Забыли пароль
+                </a>
+            </form>
         </div>
-        <a href="javascript:void(0);" class="registration">
-            Зарегистрироваться
-        </a>
+        <div class="bot-part">
+            <h5>Еще не с нами?</h5>
+            <div class="subtitle">
+                Тогда зарегистрируйтесь, чтобы
+                получить подробную информацию
+                о каждом ингредиенте, скачать спецификацию,
+                узнать о рецептурах и т.д.
+            </div>
+            <a href="javascript:void(0);" class="registration">
+                Зарегистрироваться
+            </a>
+        </div>
     </div>
 </div>
 <!-- конец модалка Войти -->
 
 <!-- модалка Войти -->
 <div class="modal" id="sign-up" style="display: none;">
-    <div class="top-part">
-        <h4>Регистрация</h4>
-        <form action="#">
-            <div class="form-group">
-                <input type="text" data-nice-placeholder placeholder="Фамилия">
+    <div class="flex">
+        <div class="top-part">
+            <h4>Регистрация</h4>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" data-nice-placeholder placeholder="Фамилия">
+                </div>
+                <div class="form-group">
+                    <input type="text" data-nice-placeholder placeholder="Компания">
+                </div>
+                <div class="form-group">
+                    <input type="text" data-nice-placeholder placeholder="Должность">
+                </div>
+                <div class="form-group">
+                    <input type="email" data-nice-placeholder placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <a href="javascript:void(0);" class="show-pass">
+                        Показать
+                    </a>
+                    <input type="password" data-nice-placeholder placeholder="Пароль">
+                </div>
+                <button class="btn">
+                    Зарегистрироваться
+                </button>
+            </form>
+        </div>
+        <div class="bot-part">
+            <a href="javascript:void(0);" class="js-sign-in-btn">
+                Войти
+            </a>
+            <div class="subtitle">
+                если вы уже зарегистрированы
             </div>
-            <div class="form-group">
-                <input type="text" data-nice-placeholder placeholder="Компания">
-            </div>
-            <div class="form-group">
-                <input type="text" data-nice-placeholder placeholder="Должность">
-            </div>
-            <div class="form-group">
-                <input type="email" data-nice-placeholder placeholder="Email">
-            </div>
-            <div class="form-group">
-                <a href="javascript:void(0);" class="show-pass">
-                    Показать
-                </a>
-                <input type="password" data-nice-placeholder placeholder="Пароль">
-            </div>
-            <button class="btn">
-                Зарегистрироваться
-            </button>
-        </form>
-    </div>
-    <div class="bot-part">
-        <a href="javascript:void(0);" class="js-sign-in-btn">
-            Войти
-        </a>
-        <div class="subtitle">
-            если вы уже зарегистрированы
         </div>
     </div>
     <a href="#close-modal" rel="modal:close" class="close-modal ">
