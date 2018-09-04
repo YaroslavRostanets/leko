@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="javascript:void(0);" class="js-sign-in">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 5.90714 10.6057 7.13623 9.90247 8.13097C9.17383 9.16164 8.4502 9.5 8 9.5C7.5498 9.5 6.82617 9.16164 6.09753 8.13097C5.39429 7.13623 5 5.90714 5 5C5 3.34314 6.34314 2 8 2C9.65686 2 11 3.34314 11 5ZM10.5657 10.3908C12.0239 9.073 13 6.82347 13 5C13 2.23857 10.7615 0 8 0C5.23853 0 3 2.23857 3 5C3 6.82582 3.97864 9.07883 5.43994 10.3959C2.8252 11.2338 1.12854 13.2059 0.210693 14.3861L1.78931 15.6139C2.93372 14.1426 4.90479 12 8 12C11.1124 12 13.2482 14.1751 14.168 15.5547L15.832 14.4453C14.9974 13.1933 13.2173 11.2224 10.5657 10.3908Z"/>
                                 </svg>
@@ -804,13 +804,14 @@
                     </a>
                 </div>
             </div>
-
+            <a href="javascript:void(0);" class="js-sign-in">Войти</a>
+            <a href="javascript:void(0);" class="js-sign-up">Регистрация</a>
         </div>
     </div>
 </main>
 
 <!-- модалка Заказать звонок -->
-<div class="modal" id="request-call" style="display: inline-block;">
+<div class="modal" id="request-call" style="display: none;">
     <h4>Заказать звонок</h4>
     <div class="subtitle">
         Укажите свои данные и тему вашего вопроса.
@@ -836,11 +837,137 @@
         </svg>
     </a>
 </div>
-<!-- конец Заказать звонок -->
+<!-- конец модалка Заказать звонок -->
+
+<!-- модалка контактные данные -->
+
+<div class="modal" id="сontact-details" style="display: none;">
+    <div class="subtitle">
+        Укажите свои данные и тему вашего вопроса.
+        Менеджер свяжется с вами в ближайшее время
+    </div>
+    <form action="#">
+        <div class="form-group">
+            <input type="text" data-nice-placeholder placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+            <input type="text" data-nice-placeholder placeholder="Телефон">
+        </div>
+        <div class="form-group">
+            <input type="text" data-nice-placeholder placeholder="Тема звонка">
+        </div>
+        <button class="btn">
+            Отправить запрос
+        </button>
+    </form>
+    <a href="#close-modal" rel="modal:close" class="close-modal ">
+        <svg width="14" height="14" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.49805 0.997314L12.498 11.9968M1.49805 11.9968L12.498 0.997314" stroke-width="2"/>
+        </svg>
+    </a>
+</div>
+
+<!-- конец модалка контактные данные -->
+
+<!-- модалка Войти -->
+<div class="modal" id="sign-in" style="display: none;">
+    <div class="top-part">
+        <a href="#close-modal" rel="modal:close" class="close-modal ">
+            <svg width="14" height="14" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.49805 0.997314L12.498 11.9968M1.49805 11.9968L12.498 0.997314" stroke-width="2"/>
+            </svg>
+        </a>
+        <form action="#">
+            <h4>Вход в личный кабинет</h4>
+            <div class="form-group">
+                <input type="email" data-nice-placeholder placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" data-nice-placeholder placeholder="Пароль">
+                <a href="javascript:void(0);" class="show-pass">
+                    Показать
+                </a>
+            </div>
+            <button class="btn">
+                Войти
+            </button>
+            <a href="#" class="forgot-password">
+                Забыли пароль
+            </a>
+        </form>
+    </div>
+    <div class="bot-part">
+        <h5>Еще не с нами?</h5>
+        <div class="subtitle">
+            Тогда зарегистрируйтесь, чтобы
+            получить подробную информацию
+            о каждом ингредиенте, скачать спецификацию,
+            узнать о рецептурах и т.д.
+        </div>
+        <a href="javascript:void(0);" class="registration">
+            Зарегистрироваться
+        </a>
+    </div>
+</div>
+<!-- конец модалка Войти -->
+
+<!-- модалка Войти -->
+<div class="modal" id="sign-up" style="display: none;">
+    <div class="top-part">
+        <h4>Регистрация</h4>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" data-nice-placeholder placeholder="Фамилия">
+            </div>
+            <div class="form-group">
+                <input type="text" data-nice-placeholder placeholder="Компания">
+            </div>
+            <div class="form-group">
+                <input type="text" data-nice-placeholder placeholder="Должность">
+            </div>
+            <div class="form-group">
+                <input type="email" data-nice-placeholder placeholder="Email">
+            </div>
+            <div class="form-group">
+                <a href="javascript:void(0);" class="show-pass">
+                    Показать
+                </a>
+                <input type="password" data-nice-placeholder placeholder="Пароль">
+            </div>
+            <button class="btn">
+                Зарегистрироваться
+            </button>
+        </form>
+    </div>
+    <div class="bot-part">
+        <a href="javascript:void(0);" class="js-sign-in-btn">
+            Войти
+        </a>
+        <div class="subtitle">
+            если вы уже зарегистрированы
+        </div>
+    </div>
+    <a href="#close-modal" rel="modal:close" class="close-modal ">
+        <svg width="14" height="14" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.49805 0.997314L12.498 11.9968M1.49805 11.9968L12.498 0.997314" stroke-width="2"/>
+        </svg>
+    </a>
+</div>
+<!-- конец модалка Войти -->
 
 <script src="https://use.fontawesome.com/1aba7bdd13.js"></script>
 <script src="local/templates/main/libs/slick/slick.min.js"></script>
 <script src="local/templates/main/libs/modal/jquery.modal.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#сontact-details').modal({
+                fadeDuration: 100,
+                fadeDelay: 0.1
+            });
+        },1000);
+    });
+</script>
 </body>
 </html>

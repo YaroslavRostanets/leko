@@ -240,4 +240,18 @@ $(document).ready(function(){
         });
     });
 
+    $('.js-sign-in, .js-sign-in-btn').on('click', function(){
+        $('#sign-in').modal({
+            fadeDuration: 200,
+            fadeDelay: 0.2
+        });
+    });
+
+    $('.js-sign-up, .registration').on('click', function(){
+        $('#sign-up').modal({
+            fadeDuration: 200,
+            fadeDelay: 0.2
+        });
+    });
+
 });
