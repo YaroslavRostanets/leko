@@ -183,10 +183,10 @@ $(document).ready(function(){
                 var placeholder = $(this).attr('placeholder');
                 $(this).attr('placeholder', '');
                 $(item).closest('.form-group').prepend('<div class="placeholder">' + placeholder + '</div>');
-                $(item).closest('.form-group').find('input').focusin(function(){
+                $(item).closest('.form-group').find('input,textarea').focusin(function(){
                    $(this).closest('.form-group').addClass('focused');
                 });
-                $(item).closest('.form-group').find('input').focusout(function(){
+                $(item).closest('.form-group').find('input,textarea').focusout(function(){
                     if(!$(this).val()){
                         $(this).closest('.form-group').removeClass('focused');
                     }

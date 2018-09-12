@@ -107,22 +107,7 @@
         height: 520px;
       }
     }
-    .tablet {
-      display: flex !important;
-    }
-    .std-top-link {
-      font-size: 0;
-      margin-right: 30px;
-      .icon {
-        margin-right: 0;
-      }
-      &:last-child {
-        margin-right: 15px;
-      }
-    }
-    .phone-num {
-      font-size: 16px;
-    }
+
     .banner-slider {
       .item {
         padding-left: 61px;
@@ -154,20 +139,36 @@
       }
     }
   }
-  .main-one-screen {
-    .top-flex {
-      top: 0;
-      position: fixed;
-      left: 0;
-      width: 100%;
-      justify-content: space-between;
-      transition: all 0.15s ease-out;
-      &.white {
-        background: #FFFFFF;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
-        .phone-num {
-          color: #212121;
-        }
+  .tablet {
+    display: flex !important;
+  }
+  .top-flex {
+    .phone-num {
+      font-size: 16px;
+    }
+    .std-top-link {
+      font-size: 0;
+      margin-right: 30px;
+      .icon {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-right: 15px;
+      }
+    }
+  }
+  .top-flex.js-top-flex {
+    top: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    transition: all 0.15s ease-out;
+    &.white {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+      .phone-num {
+        color: #212121;
       }
     }
   }
@@ -408,6 +409,42 @@
     line-height: 120%;
     .flex {
       align-items: flex-end;
+    }
+  }
+  .contacts-main {
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    .title {
+      font-size: 40px;
+      margin: 0 0 10px;
+    }
+    .subtitle {
+      width: 100%;
+    }
+    .cont-flex {
+      margin-bottom: 40px;
+      .left-part {
+        width: calc(50% - 10px);
+      }
+      .right-part {
+        width: calc(50% - 10px);
+        margin-right: 0;
+      }
+      .email-group {
+        input {
+          width: 100%;
+        }
+      }
+      .phone-group {
+        input {
+          width: 100%;
+        }
+      }
+    }
+    #map {
+      margin-right: -60px;
+      margin-left: -60px;
     }
   }
 }

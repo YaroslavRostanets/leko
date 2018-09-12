@@ -205,4 +205,40 @@
   .footer {
     padding: 30px 45px 30px 90px;
   }
+  .contacts-main {
+    .cont-flex {
+      .left-part {
+        width: calc( 50% - 20px );
+        margin-right: 20px;
+      }
+      .right-part {
+        width: calc( 50% - 20px );
+        margin-right: 20px;
+      }
+      .flex {
+        flex-direction: column;
+      }
+      .form-group {
+        padding-top: 5px;
+        padding-bottom: 0;
+        margin-bottom: 15px;
+        input, textarea {
+          font-size: 17px;
+        }
+      }
+      textarea {
+        padding-top: 10px;
+      }
+      .placeholder {
+        font-size: 17px;
+      }
+    }
+    .btn {
+      font-size: 20px;
+      height: 50px;
+      margin-top: 15px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
 }

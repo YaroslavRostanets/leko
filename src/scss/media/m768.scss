@@ -228,4 +228,41 @@
       margin-bottom: 10px;
     }
   }
+  .contacts-main {
+    padding-left: 15px;
+    padding-right: 15px;
+    #map {
+      margin-left: -15px;
+      margin-right: -15px;
+      height: 340px;
+    }
+    .cont-flex {
+      flex-direction: column;
+      .left-part {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: 0;
+      }
+      .one-row {
+        width: calc( 50% - 10px );
+        .label {
+          margin-bottom: 10px;
+        }
+      }
+      .right-part {
+        width: 100%;
+        h5 {
+          text-align: center;
+        }
+        form {
+          width: 380px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+    }
+
+  }
 }

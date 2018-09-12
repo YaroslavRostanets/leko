@@ -1,8 +1,5 @@
 @media (max-width: 540px) {
   .one-screen {
-    .phone-num {
-      display: none;
-    }
     .banner-slider {
       .item {
         padding-right: 30px;
@@ -20,6 +17,11 @@
     }
     .std-top-link {
       margin-right: 20px;
+    }
+  }
+  .top-flex {
+    .phone-num {
+      display: none;
     }
   }
   .ingredient-group {
@@ -161,6 +163,24 @@
     padding: 22px 15px 15px;
     .copyright {
       margin-bottom: 25px;
+    }
+  }
+  .contacts-main {
+    .title {
+      font-size: 30px;
+    }
+    .cont-flex {
+      .one-row {
+        width: 100%;
+      }
+      .right-part {
+        form {
+          width: 100%;
+        }
+      }
+    }
+    .subtitle {
+      margin-bottom: 30px;
     }
   }
 }

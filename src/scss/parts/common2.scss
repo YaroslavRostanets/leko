@@ -29,3 +29,139 @@ h4 {
   width: 100%;
   height: 100%;
 }
+.top-flex {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+  .right-part {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .phone-num {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .callback {
+    svg {
+      stroke: #FA4616;
+    }
+  }
+  .std-top-link {
+    font-size: 14px;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 50px;
+    }
+    .icon {
+      width: 36px;
+      height: 36px;
+      background: #FCF9F7;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 6px;
+    }
+  }
+  .phone-num {
+    color: #000000;
+  }
+  .std-top-link {
+    color: #000000;
+    .icon {
+      background: #FCF9F7;
+    }
+  }
+  .callback {
+    color: #FA4616;
+    svg {
+      stroke: #FA4616;
+    }
+  }
+}
+.breadcrumbs {
+  font-size: 12px;
+  font-weight: 300;
+  list-style: none;
+  margin: 10px 0;
+  padding-left: 0;
+  a {
+    color: #FA4616;
+    text-decoration: none;
+    display: inline;
+  }
+  li {
+    display: inline;
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: "/";
+    }
+  }
+}
+.form-group {
+  border-bottom: 2px solid #D6D2D0;
+  margin-right: 25px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  position: relative;
+  &.focused {
+    .placeholder {
+      font-size: 13px;
+      top: -15px;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.placeholder {
+  font-size: 24px;
+  font-weight: 300;
+  color: #9E9E9E;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  transition: all 0.2s ease;
+}
+input[type="text"]{
+  width: 310px;
+  height: 37px;
+  line-height: 38px;
+  background: transparent;
+  display: block;
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  color: #9E9E9E;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 1;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 24px;
+    font-weight: 300;
+    color: #9E9E9E;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.tablet {
+  display: none !important;
+}

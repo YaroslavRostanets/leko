@@ -1,0 +1,136 @@
+.contacts-main {
+  padding-top: 29px;
+  padding-left: 110px;
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
+  .title {
+    color: #212121;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0 23px 0;
+  }
+  .subtitle {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 160%;
+    width: 500px;
+    margin-bottom: 43px;
+  }
+  .one-row {
+    margin-bottom: 28px;
+    .label {
+      font-size: 13px;
+      color: #9E9E9E;
+      margin-bottom: 15px;
+    }
+    .text {
+      font-size: 16px;
+      color: #212121;
+      line-height: 160%;
+    }
+    a {
+      text-decoration: none;
+      color: #212121;
+    }
+    .mail {
+      color: #FA4616;
+    }
+    .gray {
+      color: #9E9E9E;
+    }
+  }
+  .cont-flex {
+    display: flex;
+    margin-bottom: 60px;
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .left-part {
+      width: 505px;
+      margin-right: 55px;
+    }
+    .right-part {
+      width: 530px;
+      h5 {
+        margin: 0 0 16px 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #212121;
+      }
+    }
+    .placeholder {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .form-group {
+      margin-bottom: 17px;
+      margin-right: 0;
+      input {
+        width: 100%;
+      }
+      &.focused {
+        .placeholder {
+          font-size: 13px;
+          top: -7px;
+        }
+      }
+    }
+    .email-group {
+      input {
+        width: 310px;
+      }
+    }
+    .phone-group {
+      input{
+        width: 200px;
+      }
+    }
+    textarea {
+      font-size: 24px;
+      font-weight: 300;
+      color: #9E9E9E;
+      font-family: Roboto,sans-serif;
+      width: 100%;
+      border: none;
+      display: block;
+      height: 37px;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+      &::placeholder {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .btn {
+    height: 60px;
+    border: 1px solid #FFF;
+    color: #FFFFFF;
+    background: #FA4616;
+    font-size: 24px;
+    font-weight: 300;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: 22px;
+    padding-left: 52px;
+    padding-right: 53px;
+    &:hover {
+      color: #FA4616;
+      background: #FFFFFF;
+      border: 1px solid #FA4616;
+    }
+  }
+  #map {
+    height: 480px;
+    margin-left: -110px;
+  }
+}
