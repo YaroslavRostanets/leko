@@ -173,4 +173,106 @@
       }
     }
   }
+  .about-main {
+    .about-picture {
+      padding-top: 15px;
+      height: 360px;
+      .title {
+        bottom: 40px;
+      }
+    }
+    .comp-history {
+      h5 {
+        font-size: 32px;
+      }
+      .subtitle {
+        margin-bottom: 40px;
+      }
+      .one-stage {
+        padding-left: 60px;
+        width: 320px;
+        margin-bottom: 40px;
+        &:first-child {
+          h5{
+            &:before {
+              left: -55px;
+            }
+            &:after {
+              left: -55px;
+            }
+          }
+        }
+      }
+    }
+    .our-mission {
+      padding-bottom: 65px;
+      h3 {
+        font-size: 32px;
+        margin: 0 0 30px;
+      }
+      blockquote {
+        max-width: none;
+        padding-left: 70px;
+        &:before {
+          width: 50px;
+          height: 30px;
+        }
+        p {
+          margin: 25px 0;
+        }
+      }
+    }
+    .in-numbers {
+      .left-title {
+        font-size: 30px;
+      }
+      .right-num {
+        .num {
+          font-size: 35px;
+        }
+      }
+    }
+    .offer-clients {
+      .left-part {
+        width: 300px;
+        min-width: 300px;
+      }
+      h3 {
+        font-size: 28px;
+      }
+    }
+    .product-portfolio {
+      .title {
+        font-size: 28px;
+        margin: 0 0 35px;
+      }
+      .diagram-cont {
+        width: 270px;
+      }
+      .left-part {
+        width: 300px;
+        min-width: 300px;
+      }
+      .legend {
+        margin: 0 0 35px;
+      }
+      .some-flex {
+        margin-bottom: 0;
+      }
+    }
+    .new-standards {
+      h3 {
+        font-size: 27px;
+      }
+      .left-part {
+        width: 300px;
+        min-width: 300px;
+        padding-right: 10px;
+      }
+      .right-part {
+        width: auto;
+        padding-top: 6px;
+      }
+    }
+  }
 }

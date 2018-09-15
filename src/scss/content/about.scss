@@ -186,7 +186,6 @@
     padding-top: 150px;
     padding-bottom: 70px;
     padding-left: 105px;
-    padding-right: 170px;
     display: flex;
     .left-title {
       color: #FFFFFF;
@@ -252,6 +251,7 @@
     }
     .left-part {
       width: 425px;
+      min-width: 425px;
     }
     .right-list {
       font-size: 16px;
@@ -275,9 +275,109 @@
           background: #212121;
           border-radius: 4px;
           left: 0;
-          top: 50%;
+          top: 14px;
           transform: translateY(-50%);
         }
+      }
+    }
+  }
+  .product-portfolio {
+    padding-top: 55px;
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-bottom: 120px;
+    .offer-flex {
+      display: flex;
+    }
+    .left-part {
+      width: 425px;
+      min-width: 425px;
+    }
+    .diagram-cont {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .title {
+      font-size: 36px;
+      color: #212121;
+      font-weight: 400;
+      margin: 0 0 54px 0;
+    }
+    .legend {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 60px;
+      .color {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: #FA4616;
+        margin-right: 14px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    .same {
+      h5 {
+        margin: 0;
+        line-height: 160%;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+    .some-flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -45px;
+      margin-bottom: 25px;
+    }
+    .one-some {
+      height: 130px;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 140%;
+      color: #212121;
+      img {
+        margin-bottom: 15px;
+        width: 24px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .text {
+        width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .read-more {
+      font-weight: 300;
+      color: #FA4616;
+      font-size: 16px;
+      text-decoration: none;
+      &:after {
+        content: "";
+        position: relative;
+        top: 2px;
+        margin-left: 5px;
+        height: 14px;
+        width: 16px;
+        display: inline-block;
+        background-image: url('../img/icons/red-arrow.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -289,6 +389,7 @@
     background: #FCF9F7;
     display: flex;
     .left-part {
+      min-width: 430px;
       width: 430px;
     }
     .right-part {
@@ -307,6 +408,12 @@
       color: #212121;
       line-height: 140%;
       font-weight: 400;
+    }
+    .img-cont {
+      img {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
