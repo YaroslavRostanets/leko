@@ -183,6 +183,95 @@
       margin-bottom: 30px;
     }
   }
+  .about-main {
+    .comp-history {
+      h5 {
+        font-size: 25px;
+      }
+      .one-stage {
+        padding-left: 35px;
+        &:first-child {
+          h5 {
+            &:before {
+              left: -33px;
+            }
+            &:after {
+              left: -35px;
+            }
+          }
+        }
+      }
+      .ona-stage-in {
+        p {
+          margin: 0 0 5px;
+        }
+      }
+      .one-logo {
+        height: 50px;
+        width: auto;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          display: block;
+          width: auto;
+          height: auto;
+          max-height: 100%;
+          max-width: 90%;
+        }
+      }
+    }
+    .our-mission {
+      padding: 35px 15px 25px;
+      blockquote {
+        padding-left: 55px;
+        &:before {
+          width: 40px;
+        }
+      }
+    }
+    .in-numbers {
+      padding-bottom: 30px;
+      .left-title {
+        padding: 20px;
+        text-align: center;
+      }
+      .right-num {
+        .one-num {
+          height: 130px;
+          font-size: 14px;
+          line-height: 120%;
+        }
+        .num {
+          font-size: 25px;
+          margin-bottom: 10px;
+          span {
+            font-size: 20px;
+            top: -9px;
+          }
+          sup {
+            font-size: 13px;
+          }
+        }
+        .sub-num {
+          text-align: center;
+        }
+      }
+    }
+    .offer-clients {
+      padding: 25px 15px 30px;
+    }
+    .product-portfolio {
+      padding: 25px 15px 30px;
+      .one-some {
+        width: 50%;
+      }
+      .some-flex {
+        margin: 0;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
   .one-screen {
