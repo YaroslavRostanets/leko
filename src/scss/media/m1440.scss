@@ -1,3 +1,22 @@
+
+@media (min-width: 1980px) {
+  .about-main {
+    .in-numbers {
+      justify-content: center;
+    }
+    .offer-clients {
+      justify-content: center;
+    }
+    .product-portfolio {
+      .offer-flex {
+        justify-content: center;
+      }
+    }
+    .new-standards {
+      justify-content: center;
+    }
+  }
+}
 @media (min-width: 1640px) {
   .ingredient-group {
     .catalog-tiles-wrap {
@@ -38,6 +57,13 @@
     }
     .btn {
       width: 20vw;
+    }
+  }
+  .about-main {
+    .our-mission {
+      blockquote {
+        max-width: 70%;
+      }
     }
   }
 }
